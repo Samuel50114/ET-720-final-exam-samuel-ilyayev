@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { Component, Input } from '@angular/core';
+import { Product } from '../products';
 import { ProductAlertsComponent } from './product-alerts.component';
 
 describe('ProductAlertsComponent', () => {
@@ -8,7 +9,7 @@ describe('ProductAlertsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProductAlertsComponent]
+      declarations: [ProductAlertsComponent],
     });
     fixture = TestBed.createComponent(ProductAlertsComponent);
     component = fixture.componentInstance;
